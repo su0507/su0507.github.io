@@ -9,8 +9,11 @@ We introduce the task of Visual Dialog, which requires an AI agent to hold a mea
 
 Visual Dialog의 작업을 소개합니다. 이것은 AI 에이전트가 시각적 콘텐츠에 대해 자연스럽고 대화적인 언어로 인간과 의미 있는 대화를 해야 합니다. 구체적으로, 이미지, 대화기록 및 이미지에 대한 질문이 주어지면 에이전트는 이미지에 질문의 근거를 두고 기록에서 맥락을 추론하고 질문에 정확하게 대답해야 합니다. Visual Dialog는 기계 지능의 일반적인 테스트 역할을 하기 위해 특정 다운스트림 작업과 충분히 얽혀있으면서 개별 응답 및 벤치마크 진행 상황을 객관적평가할 수 있을 만큼 충분히 비전에 기반을 둡니다. 우리는 대규모 Visual Dialog 데이터 세트를 선별하기 위해 새로운 2인 채팅 데이터 수집 프로토콜을 개발합니다. visDial v0.9가 출시되었으며 COCO의 ~120k 이미지에 대한 10개의 질문-답변 쌍이 있는 1개의 대화 상자와 총 ~120만 개의 대화 질문 대답 쌍이 포함되어 있습니다.
 
-We introduce a family of neural encoder-decoder models for Visual Dialog with 3 encoders – Late Fusion, Hierarchical Recurrent Encoder and Memory Network– and 2 decoders (generative and discriminative), which outperform a number of sophisticated baselines. We propose a retrievalbased evaluation protocol for Visual Dialog where the AI agent is asked to sort a set of candidate answers and evaluated on metrics such as mean-reciprocal-rank of human response. We quantify gap between machine and human performance on the Visual Dialog task via human studies. Putting it all together, we demonstrate the first ‘visual chatbot’! Our dataset, code, trained models and visual chatbot are available on https://visualdialog.org.
+We introduce a family of neural encoder-decoder models for Visual Dialog with 3 encoders – Late Fusion, Hierarchical Recurrent Encoder and Memory Network– and 2 decoders (generative and discriminative), which outperform a number of sophisticated baselines. We propose a retrieval-based evaluation protocol for Visual Dialog where the AI agent is asked to sort a set of candidate answers and evaluated on metrics such as mean-reciprocal-rank of human response. We quantify gap between machine and human performance on the Visual Dialog task via human studies. Putting it all together, we demonstrate the first ‘visual chatbot’! Our dataset, code, trained models and visual chatbot are available on https://visualdialog.org.
 
 
-3개의 인코더가 있는 Visual Dialog용 신경 인코더-디코더 모델 제품군을 소개합니다. Late Fusion, 계층적 순환 인코더 및 메모리 네트워크, 그리고 2개의 디코더(생성 및 판별)는 정교한 기준선을 능가합니다.
+3개의 인코더가 있는 Visual Dialog용 신경 인코더-디코더 모델 제품군을 소개합니다. Late Fusion, 계층적 순환 인코더 및 메모리 네트워크, 그리고 2개의 디코더(생성 및 판별)는 정교한 기준선을 능가합니다.우리는 검색을 제안합니다. 우리는 AI 에이전트가 일련의 후보 답변을 정렬하고 인간 응답의 평균 역수와 같은 메트릭에 대해 평가하는 프로토콜을 제안합니다. 
+우리는 인간 연구를 통해 Visual Dialog 작업에서 기계와 인간의 성능 사이의 격차를 정량화합니다. 이를 종합하여 최초의 '비주얼 챗봇'을 시연합니다! 데이터세트, 코드, 훈련된 모델 및 시각적 챗봇은 https://visualdialog.org에서 사용할 수 있습니다.
+
+# Introduction
 
