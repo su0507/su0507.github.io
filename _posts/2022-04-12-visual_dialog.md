@@ -37,3 +37,16 @@ As a step towards conversational visual AI, we introduce a novel task– Visual 
 대화형 시각적 AI를 향한 단계로 대규모 데이터 세트, 평가 프로토콜 및 새로운 심층 모델과 함께 새로운 작업인 Visual Dialog를 소개합니다.
 
 **Task Definition.** The concrete task in Visual Dialog is the following– given an image I, a history of a dialog consisting of a sequence of question-answer pairs (Q1: ‘How many people are in wheelchairs?’, A1: ‘Two’, Q2: ‘What are their genders?’, A2: ‘One male and one female’), and a natural language follow-up question (Q3: ‘Which one is holding a racket?’), the task for the machine is to answer the question in free-form natural language (A3: ‘The woman’). This task is the visual analogue of the Turing Test.
+
+Visual Dialog의 구체적인 작업은 다음과 같습니다. 이미지 I, 일련의 질문-답변 쌍으로 구성된 대화 이력(Q1: '얼마나 많은 사람들이 휠체어에 타고 있습니까?', A1: '2', Q2: '그들의 성별은 무엇입니까?', A2: '남성 1명, 여성 1명'), 자연어 후속 질문(Q3: '라켓을 들고 있는 사람은 누구입니까?'), 기계의 임무는 대답하는 것입니다. 자유 형식의 자연어로 된 질문(A3: '여자'). 이 작업은 튜링 테스트의 시각적 유사체입니다.
+
+Consider the Visual Dialog examples in Fig. 2. The question ‘What is the gender of the one in the white shirt?’ requires the machine to selectively focus and direct attention to a relevant region. ‘What is she doing?’ requires co-reference resolution (whom does the pronoun ‘she’ refer to?), ‘Is that a man to her right?’ further requires the machine to have visual memory (which object in the image were we talking about?). Such systems also need to be consistent with their outputs– ‘How many people are in wheelchairs?’, ‘Two’, ‘What are their genders?’, ‘One male and one female’– note that the number of genders being specified should add up to two. Such difficulties make the problem a highly interesting and challenging one.
+
+그림 2의 Visual Dialog 예를 고려하십시오. '흰 셔츠를 입은 사람의 성별은 무엇입니까?'라는 질문은 기계가 관련 영역에 선택적으로 초점을 맞추고 주의를 집중하도록 요구합니다. '그녀는 무엇을 하고 있나요?'는 공동 참조 해상도(대명사 '그녀'는 누구를 가리킵니까?)가 필요하고, '그 여자는 오른쪽에 있는 남자인가요?'는 더 나아가 기계에 시각적 기억(이미지에서 어떤 물체가 있었는지)을 요구합니다. 우리 얘기?). 이러한 시스템은 또한 '휠체어를 탄 사람이 몇 명입니까?', '2인', '성별은 무엇입니까?', '남성 1명과 여성 1명'과 같은 출력과 일치해야 합니다. 지정되는 성별의 수는 다음과 같아야 합니다. 2개까지 추가합니다. 그러한 어려움은 문제를 매우 흥미롭고 도전적인 문제로 만듭니다.
+
+**Why do we talk to machines?** Prior work in language-only (non-visual) dialog can be arranged on a spectrum with the following two end-points:
+언어 전용(비시각적) 대화에서 이전 작업은 다음 두 끝점이 있는 스펙트럼에서 정렬할 수 있습니다.
+
+goal-driven dialog (e.g. booking a flight for a user) ←→ goal-free dialog (or casual ‘chit-chat’ with chatbots). The two ends have vastly differing purposes and conflicting evaluation criteria. Goal-driven dialog is typically evaluated on task-completion rate (how frequently was the user able to book their flight) or time to task completion [14,44]– clearly, the shorter the dialog the better. In contrast, for chit-chat, the longer the user engagement and interaction, the better. For instance, the goal of the 2017 $2.5 Million Amazon Alexa Prize is to “create a socialbot that converses coherently and engagingly with humans on popular topics for 20 minutes.”
+
+목표 기반 대화(예: 사용자를 위한 항공편 예약) ←→ 목표 없는 대화(또는 챗봇을 사용한 캐주얼한 '잡담'). 두 가지 목적은 크게 다른 목적과 상충되는 평가 기준을 가지고 있습니다. 목표 기반 대화는 일반적으로 작업 완료율(사용자가 항공편을 예약할 수 있었던 빈도) 또는 작업 완료 시간[14,44]으로 평가됩니다. 분명히 대화는 짧을수록 좋습니다. 반면, 잡담의 경우 사용자 참여 및 상호 작용이 길수록 좋습니다. 예를 들어, 2017년 250만 달러 Amazon Alexa Prize의 목표는 "인기 있는 주제에 대해 20분 동안 인간과 일관되고 매력적으로 대화하는 소셜봇을 만드는 것"입니다.
