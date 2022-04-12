@@ -9,4 +9,6 @@ We introduce the task of Visual Dialog, which requires an AI agent to hold a mea
 
 Visual Dialog의 작업을 소개합니다. 이것은 AI 에이전트가 시각적 콘텐츠에 대해 자연스럽고 대화적인 언어로 인간과 의미 있는 대화를 해야 합니다. 구체적으로, 이미지, 대화기록 및 이미지에 대한 질문이 주어지면 에이전트는 이미지에 질문의 근거를 두고 기록에서 맥락을 추론하고 질문에 정확하게 대답해야 합니다. Visual Dialog는 기계 지능의 일반적인 테스트 역할을 하기 위해 특정 다운스트림 작업과 충분히 얽혀있으면서 개별 응답 및 벤치마크 진행 상황을 객관적평가할 수 있을 만큼 충분히 비전에 기반을 둡니다. 우리는 대규모 Visual Dialog 데이터 세트를 선별하기 위해 새로운 2인 채팅 데이터 수집 프로토콜을 개발합니다. visDial v0.9가 출시되었으며 COCO의 ~120k 이미지에 대한 10개의 질문-답변 쌍이 있는 1개의 대화 상자와 총 ~120만 개의 대화 질문 대답 쌍이 포함되어 있습니다.
 
+Weintroduce a family of neural encoder-decoder models for Visual Dialog with 3 encoders– Late Fusion, Hierarchical Recurrent Encoder and Memory Network– and 2 decoders (generative and discriminative), which outperform a number of sophisticated baselines. We propose a retrievalbased evaluation protocol for Visual Dialog where the AI agent is asked to sort a set of candidate answers and evaluated on metrics such as mean-reciprocal-rank of human response. We quantify gap between machine and human performance on the Visual Dialog task via human studies. Putting it all together, we demonstrate the first ‘visual chatbot’! Our dataset, code, trained models and visual chatbot are available on https://visualdialog.org.
+
 
