@@ -1,6 +1,6 @@
 ---
 layout : single
-title : "visual dialog"
+title : "Visual Dialog"
 ---
 
 # Abstract 
