@@ -61,3 +61,5 @@ We believe our instantiation of Visual Dialog hits a sweet spot on this spectrum
 • We propose a retrieval-based evaluation protocol for Visual Dialog where the AI agent is asked to sort a list of candidate answers and evaluated on metrics such as meanreciprocal-rank of the human response.
 • Weconduct studies to quantify human performance.
 • Putting it all together, on the project page we demonstrate the first visual chatbot!
+
+
