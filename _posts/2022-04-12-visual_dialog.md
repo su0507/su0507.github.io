@@ -32,3 +32,5 @@ Despite rapid progress at the intersection of vision and language– in particul
 특히 이미지 캡션과 VQA(시각적 질문 답변) 분야에서 시각과 언어의 교차점에서 급속한 발전에도 불구하고 '보고', '소통'할 수 있는 AI 에이전트의 이 원대한 목표와는 거리가 멀다는 것이 분명합니다. 캡션에서 인간-기계 상호 작용은 인간의 대화나 입력 없이 단순히 인간에게 말하는 기계로 구성됩니다('두 사람은 휠체어에 있고 한 사람은 라켓을 잡고 있습니다').
 VQA는 인간-기계 상호 작용을 향한 중요한 단계를 취하지만 여전히 대화의 한 라운드만 나타냅니다. 인간 대화와 달리 후속 질문의 범위가 없으며 시스템에 사용자가 묻는 이전 질문에 대한 메모리나 일관성이 없습니다. 시스템에서 제공한 이전 답변과 관련하여(Q: '휠체어를 탄 사람은 몇 명입니까?', A: '둘', Q: '휠체어가 몇 개입니까?', A: '하나')
 
+As a step towards conversational visual AI, we introduce a novel task– Visual Dialog– along with a large-scale dataset, an evaluation protocol, and novel deep models.
+
