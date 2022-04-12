@@ -34,3 +34,6 @@ VQA는 인간-기계 상호 작용을 향한 중요한 단계를 취하지만 �
 
 As a step towards conversational visual AI, we introduce a novel task– Visual Dialog– along with a large-scale dataset, an evaluation protocol, and novel deep models.
 
+대화형 시각적 AI를 향한 단계로 대규모 데이터 세트, 평가 프로토콜 및 새로운 심층 모델과 함께 새로운 작업인 Visual Dialog를 소개합니다.
+
+**Task Definition.** The concrete task in Visual Dialog is the following– given an image I, a history of a dialog consisting of a sequence of question-answer pairs (Q1: ‘How many people are in wheelchairs?’, A1: ‘Two’, Q2: ‘What are their genders?’, A2: ‘One male and one female’), and a natural language follow-up question (Q3: ‘Which one is holding a racket?’), the task for the machine is to answer the question in free-form natural language (A3: ‘The woman’). This task is the visual analogue of the Turing Test.
